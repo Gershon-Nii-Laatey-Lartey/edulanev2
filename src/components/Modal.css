@@ -339,8 +339,8 @@
 
 .appt-form__field input:focus,
 .appt-form__field textarea:focus {
-  border-color: var(--green-mid);
-  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.08);
+  border-color: var(--black);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
 }
 
 /* ─── CHECKER MODAL SPECIFIC ─── */

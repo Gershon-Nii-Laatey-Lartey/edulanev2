@@ -7,8 +7,7 @@ export default function Footer() {
       <div className="footer__inner">
         <div className="footer__brand">
           <div className="footer__logo">
-            <span className="footer__logo-mark">E</span>
-            EduLane
+            edulane®
           </div>
           <p className="footer__tagline">
             From WASSCE results to university acceptance — we handle the entire journey.

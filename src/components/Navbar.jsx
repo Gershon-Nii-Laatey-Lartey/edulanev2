@@ -26,8 +26,7 @@ export default function Navbar({ onBookAppointment }) {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-mark">E</span>
-          EduLane
+          edulane®
         </Link>
 
         <ul className="navbar__links">
@@ -44,8 +43,8 @@ export default function Navbar({ onBookAppointment }) {
         </ul>
 
         <div className="navbar__actions">
-          <button className="btn btn--outline btn--sm" onClick={onBookAppointment}>
-            Book appointment
+          <button className="btn btn--black-pill btn--sm" onClick={onBookAppointment}>
+            Book appointment ↗
           </button>
         </div>
 
@@ -65,8 +64,8 @@ export default function Navbar({ onBookAppointment }) {
               {l.label}
             </Link>
           ))}
-          <button className="btn btn--green btn--full" onClick={() => { onBookAppointment(); setMenuOpen(false) }}>
-            Book appointment
+          <button className="btn btn--black-pill btn--full" onClick={() => { onBookAppointment(); setMenuOpen(false) }}>
+            Book appointment ↗
           </button>
         </div>
       )}
