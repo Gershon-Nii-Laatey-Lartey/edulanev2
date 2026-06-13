@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CheckCircle, GraduationCap, FileText, Calendar, Mail, ArrowRight, Star, Users, BookOpen, Zap } from 'lucide-react'
 import HeroInput from '../components/HeroInput'
@@ -89,56 +88,36 @@ const UNIVERSITIES = [
 ]
 
 export default function Landing({ onBookAppointment, onBuyChecker }) {
-  const [matcherOpen, setMatcherOpen] = useState(false)
-
   return (
     <main className="landing">
       {/* HERO */}
       <section className="hero">
-        <div className="hero__sidebar">
-          <div className="hero__sidebar-top">
-            <span className="hero__sidebar-logo">edulane®</span>
+        <div className="hero__inner">
+          <div className="hero__eyebrow">
+            <span className="hero__badge">Ghana's university admissions platform</span>
           </div>
-          <div className="hero__sidebar-mid">
-            <p>We match grades, design admissions pathways, and guide students to programs worth backing.</p>
-            <p className="hero__sidebar-highlight">From results to first admission offer in under 30 days.</p>
-          </div>
-          <div className="hero__sidebar-bottom">
-            <a href="#process" className="hero__sidebar-link">
-              Details <span className="arrow">→</span>
-            </a>
+
+          <h1 className="hero__headline">
+            Know where your <br />
+            <em>WASSCE results</em> can take you
+          </h1>
+
+          <p className="hero__sub">
+            Enter your index number or upload your result slip. We match you to programmes across 40+ universities — instantly, based on real cutoff points.
+          </p>
+
+          <HeroInput />
+
+          {/* Stats row */}
+          <div className="hero__stats">
+            {STATS.map(s => (
+              <div key={s.label} className="hero__stat">
+                <span className="hero__stat-value">{s.value}</span>
+                <span className="hero__stat-label">{s.label}</span>
+              </div>
+            ))}
           </div>
         </div>
-
-        <div className="hero__main">
-          <div className="hero__top-right">
-            <p>We partner with students from day one — from results checker to first admission offer.</p>
-          </div>
-
-          <div className="hero__headline-container">
-            <h1 className="hero__headline">
-              matching <br />
-              bold <br />
-              minds <br />
-              that <br />
-              succeed
-            </h1>
-          </div>
-
-          <div className="hero__cta-wrapper" onClick={() => setMatcherOpen(true)}>
-            <button className="hero__circle-btn" aria-label="Match results">
-              →
-            </button>
-            <span className="hero__cta-text">Match your results</span>
-          </div>
-        </div>
-
-        <div className="hero__bottom-bar">
-          <span className="hero__bottom-left">Est. 2026 // edulane®</span>
-          <span className="hero__bottom-right">Admissions Studio & Placement Support</span>
-        </div>
-
-        <div className="hero__watermark">edulane</div>
       </section>
 
       {/* UNIVERSITY STRIP */}
@@ -203,7 +182,7 @@ export default function Landing({ onBookAppointment, onBuyChecker }) {
                   <p className="service-card__desc">{svc.desc}</p>
                   <button
                     className="btn btn--outline btn--md service-card__cta"
-                    onClick={svc.type === 'checker' ? onBuyChecker : svc.type === 'admissions' ? onBookAppointment : () => setMatcherOpen(true)}
+                    onClick={svc.type === 'checker' ? onBuyChecker : svc.type === 'admissions' ? onBookAppointment : () => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   >
                     {svc.cta}
                     <ArrowRight size={15} />
@@ -267,18 +246,6 @@ export default function Landing({ onBookAppointment, onBuyChecker }) {
           </div>
         </div>
       </section>
-
-      {/* MATCHER MODAL */}
-      {matcherOpen && (
-        <div className="matcher-modal" onClick={() => setMatcherOpen(false)}>
-          <div className="matcher-modal__content" onClick={e => e.stopPropagation()}>
-            <button className="matcher-modal__close" onClick={() => setMatcherOpen(false)}>×</button>
-            <h2 className="matcher-modal__title">find matches</h2>
-            <p className="matcher-modal__sub">Enter your WASSCE index number, upload your results sheet, or type them manually to instantly search 40+ universities.</p>
-            <HeroInput />
-          </div>
-        </div>
-      )}
     </main>
   )
 }
