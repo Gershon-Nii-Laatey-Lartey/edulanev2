@@ -1,0 +1,290 @@
+.services {
+  padding-top: 64px;
+}
+
+.services__hero {
+  padding: 72px 24px 56px;
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.services__title {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+  color: var(--black);
+  margin: 12px 0;
+}
+
+.services__sub {
+  font-size: 1rem;
+  color: var(--grey-muted);
+  max-width: 520px;
+}
+
+/* ─── SECTION ─── */
+.svc-section {
+  padding: 64px 0;
+}
+
+.svc-section__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.svc-section__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--green-deep);
+  color: white;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.svc-section__icon--light {
+  background: var(--green-pale);
+  color: var(--green-deep);
+}
+
+.svc-section__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 6px;
+  font-family: var(--font-body);
+}
+
+.svc-section__sub {
+  font-size: 0.9rem;
+  color: var(--grey-muted);
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.svc-section__price {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.svc-divider {
+  height: 1px;
+  background: var(--grey-light);
+}
+
+/* ─── CHECKER PLANS ─── */
+.checker-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.checker-plan {
+  position: relative;
+  background: var(--off-white);
+  border: 1.5px solid var(--grey-light);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.checker-plan:hover {
+  border-color: var(--green-mid);
+  box-shadow: var(--shadow-md);
+}
+
+.checker-plan--popular {
+  border-color: var(--green-deep);
+  background: var(--white);
+}
+
+.checker-plan__badge {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  background: var(--green-deep);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.checker-plan__qty {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--grey-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.checker-plan__label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.checker-plan__price {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  margin: 4px 0;
+}
+
+.checker-plan__per {
+  font-size: 0.78rem;
+  color: var(--grey-muted);
+  margin-bottom: 16px;
+}
+
+.checker-notes {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.checker-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--grey-muted);
+  font-weight: 500;
+}
+
+/* ─── MATCHING ─── */
+.matching-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  max-width: 600px;
+}
+
+.matching-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--black);
+}
+
+.matching-feature__icon {
+  color: var(--green-mid);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ─── ADMISSIONS ─── */
+.admissions-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px;
+  align-items: start;
+}
+
+.admissions-inclusions__title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--grey-muted);
+  margin-bottom: 16px;
+}
+
+.admissions-inclusion {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--black);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.admissions-inclusion:last-child {
+  border-bottom: none;
+}
+
+.admissions-inclusion svg {
+  color: var(--green-mid);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.admissions-cta-card {
+  background: var(--green-deep);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admissions-cta-card__top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admissions-cta-card__icon {
+  color: rgba(255,255,255,0.4);
+}
+
+.admissions-cta-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.admissions-cta-card p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+}
+
+.admissions-cta-card .btn--green {
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.2);
+}
+
+.admissions-cta-card .btn--green:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.admissions-cta-card__note {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .checker-plans {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .admissions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .svc-section__price {
+    margin-left: 0;
+    width: 100%;
+  }
+}
