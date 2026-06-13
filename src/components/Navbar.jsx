@@ -43,7 +43,7 @@ export default function Navbar({ onBookAppointment }) {
         </ul>
 
         <div className="navbar__actions">
-          <button className="btn btn--black-pill btn--sm" onClick={onBookAppointment}>
+          <button className="btn btn--green btn--sm" onClick={onBookAppointment}>
             Book appointment ↗
           </button>
         </div>
@@ -64,7 +64,7 @@ export default function Navbar({ onBookAppointment }) {
               {l.label}
             </Link>
           ))}
-          <button className="btn btn--black-pill btn--full" onClick={() => { onBookAppointment(); setMenuOpen(false) }}>
+          <button className="btn btn--green btn--full" onClick={() => { onBookAppointment(); setMenuOpen(false) }}>
             Book appointment ↗
           </button>
         </div>

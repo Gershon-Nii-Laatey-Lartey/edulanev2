@@ -63,7 +63,7 @@
   right: 0;
   bottom: 8px;
   height: 12px;
-  background: var(--neon-lime);
+  background: var(--green-light);
   z-index: -1;
   transform: skewX(-10deg);
 }
@@ -240,8 +240,8 @@
 .step__icon {
   width: 40px;
   height: 40px;
-  background: var(--neon-lime);
-  color: var(--black);
+  background: var(--green-pale);
+  color: var(--green-deep);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -372,8 +372,8 @@
 .testimonial__avatar {
   width: 40px;
   height: 40px;
-  background: var(--neon-lime);
-  color: var(--black);
+  background: var(--green-pale);
+  color: var(--green-deep);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -454,8 +454,8 @@
 
 .cta-banner__form .btn {
   border-radius: 100px;
-  background: var(--neon-lime);
-  color: var(--black);
+  background: var(--green-light);
+  color: var(--green-deep);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -464,7 +464,7 @@
 }
 
 .cta-banner__form .btn:hover {
-  background: #d4ec00;
+  background: #62cba3;
   transform: scale(1.01);
 }
 

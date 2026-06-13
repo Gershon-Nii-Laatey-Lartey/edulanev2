@@ -38,7 +38,7 @@
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 800;
-  color: var(--black);
+  color: var(--green-deep);
   letter-spacing: -0.03em;
   display: flex;
   align-items: center;
@@ -171,31 +171,35 @@
 }
 
 .btn--green {
-  background: var(--black);
+  background: var(--green-deep);
   color: var(--white);
+  border-radius: 100px;
 }
 
 .btn--green:hover {
-  background: #222;
+  background: var(--green-mid);
+  transform: scale(1.02);
 }
 
 .btn--outline {
   background: transparent;
-  border: 1.5px solid var(--black);
-  color: var(--black);
+  border: 1.5px solid var(--green-deep);
+  color: var(--green-deep);
+  border-radius: 100px;
 }
 
 .btn--outline:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--green-pale);
+  color: var(--green-deep);
 }
 
 .btn--ghost {
   background: transparent;
-  color: var(--black);
+  color: var(--green-mid);
 }
 
 .btn--ghost:hover {
-  background: rgba(0, 0, 0, 0.04);
+  background: var(--green-pale);
 }
 
 .btn--full {

@@ -98,8 +98,8 @@ export default function Landing({ onBookAppointment, onBuyChecker }) {
           </div>
 
           <h1 className="hero__headline">
-            Know where your <br />
-            <em>WASSCE results</em> can take you
+            Know where you <br />
+            <em>belong</em>
           </h1>
 
           <p className="hero__sub">
