@@ -20,7 +20,7 @@
 /* ─── MODAL ─── */
 .modal {
   background: var(--white);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   width: 100%;
   max-width: 580px;
   max-height: 90svh;

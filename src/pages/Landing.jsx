@@ -93,10 +93,6 @@ export default function Landing({ onBookAppointment, onBuyChecker }) {
       {/* HERO */}
       <section className="hero">
         <div className="hero__inner">
-          <div className="hero__eyebrow">
-            <span className="hero__badge">Ghana's university admissions platform</span>
-          </div>
-
           <h1 className="hero__headline">
             Know where you <br />
             <em>belong</em>
